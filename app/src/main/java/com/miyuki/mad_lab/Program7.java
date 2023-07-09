@@ -1,0 +1,37 @@
+package com.miyuki.mad_lab;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.view.View;
+import android.widget.EditText;
+
+import java.util.Locale;
+
+public class Program7 extends AppCompatActivity {
+
+    EditText e1;
+    TextToSpeech t1;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_program7);
+        e1=findViewById(R.id.text);
+        t1=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener()
+        {
+            @Override
+            public void onInit(int status) {
+
+                if(status!=TextToSpeech.ERROR){
+                    t1.setLanguage(Locale.UK);
+                }
+            }
+        });
+    }
+
+    public void convert(View V){
+        String tospeak=e1.getText().toString();
+        t1.speak(tospeak,TextToSpeech.QUEUE_FLUSH,null);
+    }
+}

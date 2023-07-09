@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="MAD LAB Programs"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp">
+
+        <TableRow
+            android:weightSum="2">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Program 1"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:onClick="program1"
+                tools:ignore="OnClick">
+
+            </Button>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Program 2"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:onClick="program2"
+                tools:ignore="OnClick">
+
+            </Button>
+
+
+        </TableRow>
+        <TableRow
+            android:weightSum="2">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Program 3"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:onClick="program3"
+                tools:ignore="OnClick">
+
+            </Button>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Program 4"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:onClick="program4"
+                tools:ignore="OnClick">
+
+            </Button>
+
+
+        </TableRow>
+        <TableRow
+            android:weightSum="2">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Program 5"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:onClick="program5"
+                tools:ignore="OnClick">
+
+            </Button>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Program 6"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:onClick="program6"
+                tools:ignore="OnClick">
+
+            </Button>
+
+
+        </TableRow>
+        <TableRow
+            android:weightSum="2">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Program 7"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:onClick="program7"
+                tools:ignore="OnClick">
+
+            </Button>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Program 8"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:onClick="program8"
+                tools:ignore="OnClick">
+
+            </Button>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+
+
+</LinearLayout>
